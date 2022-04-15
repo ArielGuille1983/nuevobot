@@ -1,7 +1,7 @@
-from asyncore import dispatcher
+from asyncio import dispatcher
 import os
 import sys
-
+import tkinter as TK
 import logging
 from tokenize import group
 from turtle import update #Para ver lo que hace es bot
