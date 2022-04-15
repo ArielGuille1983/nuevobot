@@ -1,10 +1,10 @@
-from asyncio import dispatcher
+#from asyncio import dispatcher
 import os
 import sys
-import tkinter as TK
+#import tkinter as TK
 import logging
-from tokenize import group
-from turtle import update #Para ver lo que hace es bot
+#from tokenize import group
+#from turtle import update #Para ver lo que hace es bot
 import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
