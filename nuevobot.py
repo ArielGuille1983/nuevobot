@@ -150,20 +150,20 @@ if __name__ == "__main__":
 
 #updater se conecta y recibe los mensajes
 
-update = Updater(myBot.token, use_context=True)
+    update = Updater(myBot.token, use_context=True)
 
 #Crear dispatcher
 
-dp = update.dispatcher
+    dp = update.dispatcher
 
 #Crear command
 
-dp.add_handler(CommandHandler("botInfo", getBotInfo)) 
-dp.add_handler(CommandHandler("start", start))
-dp.add_handler(CommandHandler("addEvent", addEvent, pass_args=True))
-dp.add_handler(CommandHandler("event", event))
-dp.add_handler(MessageHandler(Filters.status_update.new_chat_members, welcomeMsg))
-dp.add_handler(MessageHandler(Filters.text, echo)) #El bot va leer los mensajes.
+    dp.add_handler(CommandHandler("botInfo", getBotInfo)) 
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("addEvent", addEvent, pass_args=True))
+    dp.add_handler(CommandHandler("event", event))
+    dp.add_handler(MessageHandler(Filters.status_update.new_chat_members, welcomeMsg))
+    dp.add_handler(MessageHandler(Filters.text, echo)) #El bot va leer los mensajes.
  
 
 
